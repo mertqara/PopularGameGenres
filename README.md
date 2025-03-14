@@ -93,7 +93,7 @@ For this project, I will use publicly available datasets that contains informati
 - Combining datasets with specific parameters.
 
 ### **2. Exploratory Data Analysis (EDA)**
-After cleaning the data. I will perform Exploratory data analysis
+After cleaning and combining the data. I will perform Exploratory data analysis
 - **Genre Distribution Over Time:** Identify which genres were most popular in different time periods.
 - **Sales Trends:** Analyze whether certain genres perform better in sales.
 - **Indie vs. AAA Impact:** Compare whether indie studios or major gaming companies drive genre shifts.
