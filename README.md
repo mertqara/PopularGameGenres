@@ -97,3 +97,101 @@ To clearly show correlations between variables I will use various data visualati
 - **Bar Charts & Pie Charts**
 - **Scatter Plots**
 These visualizations will support me in my conclusions.
+
+## **Exploratory data analysis**
+
+### **1. Genre Distribution Over Time**
+
+#### **Purpose:** See how genre popularity changed by decade.
+
+#### **Plot Used:** Bar
+
+![Image](https://github.com/user-attachments/assets/3e3c1001-d738-4844-9018-c143c5244944)
+
+### **2. Sales Trends by Genre**
+
+#### **Purpose:** Identify which genres generate the most average global sales.
+
+#### **Method:** Calculated average Global Sales per genre.
+
+#### **Plot Used:** Bar Plot
+
+![Image](https://github.com/user-attachments/assets/29caf722-40cd-4af1-8db2-0539486342ed)
+
+### **3. Indie vs AAA Impact on Sales**
+
+#### **Purpose:** Compare sales performance between AAA studios and Indie studios.
+
+#### **Method:** Classified games as AAA or Indie and compared Global Sales.
+
+#### **Plot Used:** Boxplot
+
+![Image](https://github.com/user-attachments/assets/6818d351-758f-412b-a715-c565fa31ad5d)
+
+### **4. Regional Influence by Genre**
+
+#### **Purpose:** Analyze how genre preferences vary by region (NA, EU, JP, Other).
+
+#### **Method:** Summed sales by genre and region.
+
+#### **Plot Used:** Stacked Bar Plot 
+
+![Image](https://github.com/user-attachments/assets/78c37f5a-a45a-4993-88ce-420ceb6b48d5)
+
+## **Correlation Analysis**
+
+### **1. Genre vs Release Year**
+
+#### **Purpose:** Explore how different genres evolved over decades.
+
+#### **Method:** Grouped game releases into decades and counted games by genre.
+
+#### **Plot Used:** Line Plot
+
+#### **Findings:** Shooter and Action genres grew rapidly after 2000; Platformers declined.
+
+![Image](https://github.com/user-attachments/assets/e0bca4e2-4cd7-4f6f-a877-ebc9e16fda7b)
+
+### **2. MetaScore vs Global Sales**
+
+#### **Purpose:** Investigate if games with higher critic scores (MetaScore) sell better.
+
+#### **Method:** Correlated MetaScore with Global Sales using scatter plot and regression line.
+
+#### **Plot Used:** Scatter Plot with Regression Line (scatterplot + regplot).
+
+#### **Findings:** Weak positive correlation (r ≈ +0.24) — critic reviews slightly impact sales.
+
+![Image](https://github.com/user-attachments/assets/64927566-be5a-41a8-b613-b451bd759f60)
+
+![Image](https://github.com/user-attachments/assets/c81885f5-fb39-4203-a438-cf039caa62ac)
+
+### **3. UserReview vs Global Sales**
+
+#### **Purpose:** Check if user ratings affect sales.
+
+#### **Method:** Correlated UserReview scores with Global Sales.
+
+#### **Plot Used:** Scatter Plot with Regression Line
+
+#### **Findings:** Almost no correlation (r ≈ +0.03) — user satisfaction does not predict sales.
+
+![Image](https://github.com/user-attachments/assets/b70ad3f6-4495-4daa-8777-cdbcfc922328)
+
+![Image](https://github.com/user-attachments/assets/45432263-537e-4007-8127-9ec980ed4574)
+
+![Image](https://github.com/user-attachments/assets/6750862a-0533-4a18-a357-98030c05797d)
+
+## **Hypothesis Testing**
+
+### **1. AAA vs Indie Global Sales**
+
+#### **Purpose:** Test if AAA games sell significantly more than Indie games.
+
+#### **Method:** Independent Samples t-test comparing Global Sales of AAA vs Indie games.
+
+#### **Plot Used:** Boxplot (during EDA), statistical t-test (hypothesis testing).
+
+#### **Result:** p-value ≈ 0.00000 → Significant difference
+
+AAA games sell significantly more.
