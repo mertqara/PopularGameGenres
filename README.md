@@ -64,25 +64,6 @@ This public dataset "Top Video Games 1995-2021 Metacritic" includes games' metac
 
 This is the link of the dataset: https://www.kaggle.com/datasets/deepcontractor/top-video-games-19952021-metacritic
 
-
-This public data set "Popular Video Games 1980 - 2023" is similar to first dataset but contains recent games. Also, games genres are more comprehencive.
-
-- **Name** - The games name
-
-- **Year** - Year of the game's release
-
-- **Publisher** - Publisher of the game
-
-- **Rating** Average rating of the game
-
-- **Genre** - Genre of the game
-
-- **Review** - Number of reviews by users
-
-- **Lists** The number of users listed this game
-
-This is the link of the dataset: https://www.kaggle.com/datasets/arnabchaki/popular-video-games-1980-2023
-
 ---
 
 ## Data Analysis
