@@ -92,10 +92,11 @@ This analysis will help determine whether certain factors have a statistically s
 
 ### **4. Visualization**
 To clearly show correlations between variables I will use various data visualation techniques:
-- **Time Series Charts**
-- **Heatmaps**
-- **Bar Charts & Pie Charts**
-- **Scatter Plots**
+- **Bar Plot**
+- **Line Plot**
+- **Scatter Plot**
+- **Boxplot**
+- **Stacked Bar Plot**
 These visualizations will support me in my conclusions.
 
 ## **Exploratory data analysis**
