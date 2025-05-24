@@ -247,7 +247,7 @@ R² on test (dropping NaNs): 0.6267584485130828
 
 ![Image](https://github.com/user-attachments/assets/37617bf1-c032-4c97-9557-2ca77f861964)
 
-### **Confusion**
+### **Confusion Matrix**
 
 ![Image](https://github.com/user-attachments/assets/071fd46f-6774-471f-b02b-f37a09539ed8)
 
