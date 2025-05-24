@@ -193,7 +193,11 @@ These visualizations will support me in my conclusions.
 
 **Plot Used:** Boxplot (during EDA), statistical t-test (hypothesis testing).
 
-**Result:** p-value ≈ 0.00000 → Significant difference
+**Result:** p-value ≈ 1.087e-103 → Significant difference
+
+*-*          t-statistic = 22.0724
+
+*-*          Cohen’s d = 0.419
 
 AAA games sell significantly more.
 
@@ -205,7 +209,11 @@ AAA games sell significantly more.
 
 **Plot Used:** Scatter plot (during correlation analysis), statistical t-test (hypothesis testing).
 
-**Result:** p-value ≈ 0.00000 → Significant difference
+**Result:** p-value ≈ 4.585e-41 → Significant difference
+
+*-*         t-statistic = 13.7427
+
+*-*         Cohen’s d = 0.443
 
 Higher-rated games sell more.
 
@@ -217,6 +225,34 @@ Higher-rated games sell more.
 
 **Plot Used:** Stacked Bar plot (during regional EDA), statistical t-test (hypothesis testing).
 
-**Result:** p-value ≈ 0.00000 → Significant difference
+**Result:** p-value ≈ 1.247e-208 → Significant difference
+
+*-*         t-statistic = -31.2171
+
+*-*         Cohen’s d = -0.355
 
 Japan’s gaming market is statistically different from the global market and their favorite genre is role-playing as we can observe it from the plots.
+
+## **Machine Learning Techniques**
+
+Used Linear regression to make a simple model that tries to find a straight-line relationship between each feature (like review score or genre) and the sales.
+
+R² on test (dropping NaNs): 0.6267584485130828
+
+### **Scatter Plot**
+
+![Image](https://github.com/user-attachments/assets/a5388765-5a33-4b2b-9586-045553d37c28)
+
+### **Bar Chart**
+
+![Image](https://github.com/user-attachments/assets/37617bf1-c032-4c97-9557-2ca77f861964)
+
+### **Confusion**
+
+![Image](https://github.com/user-attachments/assets/071fd46f-6774-471f-b02b-f37a09539ed8)
+
+
+
+
+
+
