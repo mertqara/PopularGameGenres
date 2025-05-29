@@ -260,6 +260,7 @@ R² on test (dropping NaNs): 0.6267584485130828
 Initially appeared extremely accurate, with an R² score of 0.994 and very low error. However, this was due to the model using regional sales data such as (NA_Sales, EU_Sales) which when summed form the actual Global_Sales. This means the model was essentially adding up parts of the answer and making its predictions unrealistic for practical use.
 
 R² score: 0.9941
+
 RMSE (on log sales): 0.0494
 
 ## **Bar Chart**
@@ -273,6 +274,7 @@ RMSE (on log sales): 0.0494
 It provided the most trustworthy results. It handled missing values automatically and used only valid features such as genre, MetaScore, UserReview, studio type, and release year without relying on any part of the target variable. Despite this, it achieved an R² of 0.532, meaning it could explain over 53% of the variation in game sales based solely on a game's metadata.
 
 R² score: 0.5322
+
 RMSE (log sales): 0.3600
 
 ### **Histogram**
@@ -281,7 +283,77 @@ RMSE (log sales): 0.3600
 ### **Scatter Plot**
 ![Image](https://github.com/user-attachments/assets/d8287024-af6f-450a-b5c1-fa23c4b117e4)
 
+## **Findings**
 
+### **Release Year & Genre Trends**
+
+**-** Certain genres (like Action and Sports) consistently dominated sales across decades.
+
+**-** Genres like RPG and Shooter saw noticeable growth after 2000, especially on newer platforms.
+
+**-** The number of games released peaked in the 2000s, aligning with the rise of PlayStation 2 and other popular consoles.
+
+### **Studio Type (AAA vs Indie)**
+
+**-** Games published by AAA studios sold significantly more than those by Indie developers.
+
+**-** AAA games also had higher critic scores on average, which correlated with higher sales.
+
+**-** Indie games were more frequent on PC and digital-only platforms.
+
+### **Review Scores**
+
+**-** Higher MetaScores and User Reviews were generally associated with increased global sales.
+
+**-** The difference was especially strong for AAA titles — review scores had a weaker correlation with indie game sales.
+
+### **Predictive Power of Game Features**
+
+**-** Using only features like genre, platform, review scores, and studio type, it was possible to predict log-transformed global sales with over 53% accuracy (R² = 0.532).
+
+**-** Gradient Boosting and Linear Regression both performed reasonably well when trained on clean, non-sales-based inputs.
+
+## **Limitations**
+
+### **Feature Scope**
+
+**-** The model excluded many potential factors such as marketing budgets, release timing (holiday season), and multiplayer features that likely influence real-world sales.
+
+### **Data Coverage**
+
+**-** The dataset only includes games that sold over 100,000 copies, so niche or smaller games are underrepresented.
+
+**-** Some columns (e.g., user reviews, developer names) had missing values, which led to dropping many rows in the Linear Regression model.
+
+### **Data Leakage**
+
+**-** In early models, including features like NA_Sales, EU_Sales, etc., created artificially high accuracy (R² > 0.99) because they are parts of the total Global_Sales.
+
+## **Future Work**
+
+**-** Integrate ESRB/PEGI rating and platform generation (e.g., 6th-gen console) to capture audience targeting.
+
+**-** Use Steam or Twitch data to estimate game popularity trends for more recent releases.
+
+**-** Expand the dataset with release month, pre-orders, and media (e.g., YouTube, Reddit).
+
+## **Conclusion**
+
+**-** There is a statistically significant relationship between game metadata (like genre, studio type, and reviews) and its global sales performance.
+
+**-** The Linear Regression model explained ~63% of the sales variation using only clean features, while Gradient Boosting achieved 53.2% R² and handled missing values automatically.
+
+**-** Random Forest appeared to perform extremely well (R² = 0.994), but this was due to data leakage — it used regional sales as inputs, which made the prediction unrealistic.
+
+### **Key Takeaways:**
+
+**-** AAA games sell more, especially when paired with strong MetaScores.
+
+**-** Genre and platform choice influence market performance — Shooters and Action games remain top-selling categories.
+
+**-** Review scores, particularly from critics, provide meaningful predictive value
+
+**-** Clean models using only pre-release features can offer practical estimates of commercial success.
 
 
 
