@@ -259,6 +259,9 @@ R² on test (dropping NaNs): 0.6267584485130828
 
 Initially appeared extremely accurate, with an R² score of 0.994 and very low error. However, this was due to the model using regional sales data such as (NA_Sales, EU_Sales) which when summed form the actual Global_Sales. This means the model was essentially adding up parts of the answer and making its predictions unrealistic for practical use.
 
+R² score: 0.9941
+RMSE (on log sales): 0.0494
+
 ## **Bar Chart**
 ![Image](https://github.com/user-attachments/assets/50af78c9-c959-4aa2-8398-ccc7c348a567)
 
@@ -269,11 +272,16 @@ Initially appeared extremely accurate, with an R² score of 0.994 and very low e
 
 It provided the most trustworthy results. It handled missing values automatically and used only valid features such as genre, MetaScore, UserReview, studio type, and release year without relying on any part of the target variable. Despite this, it achieved an R² of 0.532, meaning it could explain over 53% of the variation in game sales based solely on a game's metadata.
 
+R² score: 0.5322
+RMSE (log sales): 0.3600
+
 ### **Histogram**
 ![Image](https://github.com/user-attachments/assets/9bfc4852-dd68-4127-9e74-3b02768ad458)
 
 ### **Scatter Plot**
 ![Image](https://github.com/user-attachments/assets/d8287024-af6f-450a-b5c1-fa23c4b117e4)
+
+
 
 
 
