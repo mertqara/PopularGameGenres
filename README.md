@@ -235,7 +235,11 @@ Japan’s gaming market is statistically different from the global market and th
 
 ## **Machine Learning Techniques**
 
+### **1. Linear Regression**
+
 Used Linear regression to make a simple model that tries to find a straight-line relationship between each feature (like review score or genre) and the sales.
+
+Linear Regression served as a clean and simple baseline. It required dropping rows with missing values, but it still explained ~63% of the variance in global sales using only game metadata.
 
 R² on test (dropping NaNs): 0.6267584485130828
 
@@ -250,6 +254,29 @@ R² on test (dropping NaNs): 0.6267584485130828
 ### **Confusion Matrix**
 
 ![Image](https://github.com/user-attachments/assets/071fd46f-6774-471f-b02b-f37a09539ed8)
+
+### **Random Forest Regressor**
+
+Initially appeared extremely accurate, with an R² score of 0.994 and very low error. However, this was due to the model using regional sales data such as (NA_Sales, EU_Sales) which when summed form the actual Global_Sales. This means the model was essentially adding up parts of the answer and making its predictions unrealistic for practical use.
+
+## **Bar Chart**
+![Image](https://github.com/user-attachments/assets/50af78c9-c959-4aa2-8398-ccc7c348a567)
+
+## **Histogram**
+![Image](https://github.com/user-attachments/assets/09520461-16da-45e6-b423-1de74f8daff7)
+
+### **Gradient Boosting Regressor**
+
+It provided the most trustworthy results. It handled missing values automatically and used only valid features such as genre, MetaScore, UserReview, studio type, and release year without relying on any part of the target variable. Despite this, it achieved an R² of 0.532, meaning it could explain over 53% of the variation in game sales based solely on a game's metadata.
+
+### **Histogram**
+![Image](https://github.com/user-attachments/assets/9bfc4852-dd68-4127-9e74-3b02768ad458)
+
+### **Scatter Plot**
+![Image](https://github.com/user-attachments/assets/d8287024-af6f-450a-b5c1-fa23c4b117e4)
+
+
+
 
 
 
